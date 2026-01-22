@@ -29,4 +29,4 @@ Final confidence =
 0.4 × OCR quality
 
 ## Samples
-See /samples
+See /data
