@@ -14,6 +14,8 @@ pip install -r requirements.txt
 ## Run
 
 uvicorn app.main:app --reload
+open another terminal
+streamlit run webapp.py
 
 ## API
 
