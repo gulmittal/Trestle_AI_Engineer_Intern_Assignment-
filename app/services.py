@@ -3,7 +3,7 @@ import os
 import json
 from dotenv import load_dotenv
 
-load_dotenv() # Load API key from .env
+load_dotenv() 
 
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
@@ -56,7 +56,6 @@ Use this exact schema:
 """
 
     response = model.generate_content([prompt, image])
-    
-    # Clean up JSON markdown if Gemini adds it
+
     json_text = response.text.replace("```json", "").replace("```", "").strip()
     return json.loads(json_text)

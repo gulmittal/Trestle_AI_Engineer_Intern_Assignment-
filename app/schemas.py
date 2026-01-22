@@ -4,7 +4,7 @@ from typing import List, Optional, Union
 class SubjectMark(BaseModel):
     subject_name: str
     max_marks: Optional[float] = None
-    obtained_marks: Union[float, str]  # Allow strings for "Absent"
+    obtained_marks: Union[float, str] 
     grade: Optional[str] = None
     confidence: float
     
